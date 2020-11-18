@@ -1,0 +1,21 @@
+.root {
+    height: 100%;
+
+    position: static;
+
+}
+
+html,
+body {
+    margin: 0;
+    height: 200%;
+}
+
+.main {
+    height: 100%;
+    position: relative;
+}
+
+h1 {
+    font-family: Lobster;
+}

@@ -1,0 +1,142 @@
+.about-class {
+
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+    position: absolute;
+    top: 25%;
+    z-index: 2;
+}
+
+.about-class h1 {
+
+    font-size: 100px;
+    font-weight: 500;
+
+    position: absolute;
+    top: 0%;
+    left: 20%;
+}
+
+.about-class-blocks {
+    width: 60%;
+
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+
+div[class^='about-class-block-item'] {
+    float: left;
+    display: inline;
+}
+
+.item-detail {
+    width: 80%;
+    height: 80%;
+
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+HTML CSS JSResult EDIT ON figure.item {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    max-height: 220px;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    background-color: #07090c;
+    font-size: 16px;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+}
+
+figure.item * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+figure.item img {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+
+    background-size: contain;
+    left: 25%;
+    top: 25%;
+    -webkit-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+figure.item figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    z-index: 1;
+    opacity: 0;
+    padding: 20px 30px;
+}
+
+figure.item h3,
+figure.item p {
+    line-height: 1.5em;
+}
+
+figure.item h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+figure.item p {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+
+figure.item .read-more {
+    border: 2px solid #ffffff;
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+}
+
+figure.item .read-more:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+figure.item:hover img,
+figure.item.hover img {
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    opacity: 0;
+}
+
+figure.item:hover figcaption,
+figure.item.hover figcaption {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
