@@ -46,3 +46,15 @@ div[class^=header-menu-item] {
     vertical-align: middle;
     cursor: pointer;
 }
+
+div[class^=header-menu-item]:hover,
+div[class^=header-menu-item].hover {
+    color: yellow;
+    width: 110px;
+    height: 34px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    font-size: 30px;
+}
